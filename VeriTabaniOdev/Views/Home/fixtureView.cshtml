@@ -1,0 +1,71 @@
+@model List<VeriTabaniOdev.Models.Fixture>
+
+    @{
+    ViewData["Title"] = "Fikstür";
+    }
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">VeriTabaniOdev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FixtureView">Fikstür</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div style="text-align: right; margin-bottom: 20px;">
+        <button class="btn btn-primary" onclick="window.location.href='@Url.Action("UpdateFixtureView", "Home")'">Create Match</button>
+    </div>
+
+    <h2>@ViewData["Title"]</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Match ID</th>
+                <th>Match Date</th>
+                <th>Home Team</th>
+                <th>Away Team</th>
+                <th>Home Score</th>
+                <th>Away Score</th>
+                <th>Match Result</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var fixture in Model)
+        {
+            <tr>
+                <td>@fixture.Matchid</td>
+                <td>@fixture.Matchdate</td>
+                <td>@fixture.Hometeam?.Teamname</td>
+                <td>@fixture.Awayteam?.Teamname</td>
+                <td>@fixture.Homescore</td>
+                <td>@fixture.Awayscore</td>
+                <td>@fixture.Matchresult</td>
+                <td>
+                    <!-- Edit Button -->
+                    <a href="@Url.Action("EditFixture", "Home", new { matchId = fixture.Matchid })" class="btn btn-warning">Edit</a>
+
+                    <!-- Delete Form -->
+                    <form action="@Url.Action("DeleteFixture", "Home")" method="post" style="display:inline;">
+                        <input type="hidden" name="matchId" value="@fixture.Matchid" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>

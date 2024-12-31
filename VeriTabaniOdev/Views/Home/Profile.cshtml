@@ -1,0 +1,178 @@
+﻿@model IEnumerable<User>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">VeriTabaniOdev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FixtureView">Fikstür</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">User Profiles</h1>
+
+        <!-- Search Form -->
+        <form id="searchForm" class="d-flex mb-4">
+            <input class="form-control me-2" type="text" id="username" name="username" placeholder="Search by username" required>
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <!-- Search Result -->
+        <div id="searchResult" class="mt-4"></div>
+
+        <!-- User Table -->
+        @if (Model.Any())
+        {
+            <table class="table table-striped table-bordered mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>@user.Userid</td>
+                            <td>@user.Username</td>
+                            <td>@user.Password</td>
+                            <td>@user.Role</td>
+                            <td>
+                                <!-- Delete Form -->
+                                <form action="@Url.Action("DeleteUser", "Home")" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@user.Userid" />
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+
+                                <!-- Edit Button -->
+                                <button class="btn btn-warning" onclick="openEditForm(@user.Userid, '@user.Role')">Edit</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No users found.</p>
+        }
+    </div>
+
+    <!-- Edit Role Modal -->
+    <div class="modal fade" id="editRoleModal" tabindex="-1" aria-labelledby="editRoleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editRoleModalLabel">Edit User Role</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editRoleForm" action="/Home/UpdateRole" method="post">
+                        <input type="hidden" id="userIdToEdit" name="id" />
+                        <div class="mb-3">
+                            <label for="currentRole" class="form-label">Current Role</label>
+                            <input type="text" class="form-control" id="currentRole" name="currentRole" disabled />
+                        </div>
+                        <div class="mb-3">
+                            <label for="newRole" class="form-label">New Role</label>
+                            <select class="form-control" id="newRole" name="newRole">
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#searchForm").on("submit", function (e) {
+                e.preventDefault(); // Formun normal gönderimini engelle
+                const username = $("#username").val();
+
+                $.ajax({
+                    url: "/Home/SearchUser",
+                    method: "POST",
+                    data: { username: username },
+                    success: function (response) {
+                        if (response) {
+                            $("#searchResult").html(`
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">User Found</h5>
+                                        <p><strong>ID:</strong> ${response.userid}</p>
+                                        <p><strong>Username:</strong> ${response.username}</p>
+
+                                        <!-- Edit Button -->
+                                        <button class="btn btn-warning" onclick="openEditForm(${response.userid}, '${response.role}')">Edit</button>
+
+                                        <!-- Delete Button -->
+                                        <form action="/Home/DeleteUser" method="post" style="display:inline;">
+                                            <input type="hidden" name="id" value="${response.userid}" />
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            `);
+                        } else {
+                            $("#searchResult").html(`
+                                <div class="alert alert-danger">
+                                    User not found or an error occurred.
+                                </div>
+                            `);
+                        }
+                    },
+                    error: function () {
+                        $("#searchResult").html(`
+                            <div class="alert alert-danger">
+                                User not found or an error occurred.
+                            </div>
+                        `);
+                    }
+                });
+            });
+        });
+
+        // Open the Edit Role Form
+        function openEditForm(userId, currentRole) {
+            $('#editRoleModal').modal('show');
+            $('#userIdToEdit').val(userId);
+            $('#currentRole').val(currentRole);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

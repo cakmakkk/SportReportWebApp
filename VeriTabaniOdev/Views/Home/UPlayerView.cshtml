@@ -1,0 +1,144 @@
+﻿@model List<VeriTabaniOdev.Models.Player>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takım Oyuncuları</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light py-5">
+    <div class="container">
+        <!-- Takım Bilgileri -->
+        <section class="card p-4 mb-5 shadow-lg border-0">
+            <h1 class="text-center text-primary display-4 mb-4">
+                @Model.FirstOrDefault()?.Team?.Teamname
+            </h1>
+            <div class="row text-center g-4">
+                <!-- Coach ve Club President -->
+                <div class="col-md-6">
+                    <p>
+                        <strong>🏅 Coach Name:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Coachname</span>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <strong>🎓 Club President:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Clubpresident</span>
+                    </p>
+                </div>
+                <!-- Genel Bilgiler -->
+                <div class="col-md-4">
+                    <p>
+                        <strong>📋 Team Name:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Teamname</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>🏟️ City:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.City</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>🆔 League ID:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Leagueid</span>
+                    </p>
+                </div>
+                <!-- İstatistikler -->
+                <div class="col-md-4">
+                    <p>
+                        <strong>⭐ Points:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Points</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>⚽ Goals Scored:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Goalsscored</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>🥅 Goals Conceded:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Goalsconceded</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>🔢 Goal Difference:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Goaldifference</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>🏆 Wins:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Wins</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>🤝 Draws:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Draws</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>❌ Losses:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Losses</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>📊 League Position:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Leagueposition</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>📊 Team id:</strong>
+                        <span class="text-dark">@Model.FirstOrDefault()?.Team?.Teamid</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oyuncu Tablosu -->
+        <section class="card p-4 shadow-lg border-0">
+            <h2 class="text-center text-secondary mb-4">Takım Oyuncuları</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Player ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Goals</th>
+                            <th scope="col">Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var player in Model)
+                        {
+                            <tr>
+                                <td>@player.Playerid</td>
+                                <td>@player.Playername</td>
+                                <td>@player.Position?.Positionname</td>
+                                <td>@player.Goals</td>
+                                <td>@player.Team?.Teamname</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

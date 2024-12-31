@@ -1,0 +1,160 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">VeriTabaniOdev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FixtureView">Fikstür</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 class="text-center">Update Team: @Model?.Teamname</h2>
+    <div class="form-container">
+        <form asp-action="UpdateTeam" method="post">
+            <input type="hidden" name="Teamid" value="@Model?.Teamid" />
+
+            <div class="form-group">
+                <label for="Teamname">Team Name</label>
+                <input type="text" id="Teamname" name="Teamname" class="form-control" value="@Model?.Teamname" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Leagueid">League ID</label>
+                <input type="number" id="Leagueid" name="Leagueid" class="form-control" value="@Model?.Leagueid" required />
+            </div>
+
+            <div class="form-group">
+                <label for="City">City</label>
+                <input type="text" id="City" name="City" class="form-control" value="@Model?.City" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Points">Points</label>
+                <input type="number" id="Points" name="Points" class="form-control" value="@Model?.Points" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Goalsscored">Goals Scored</label>
+                <input type="number" id="Goalsscored" name="Goalsscored" class="form-control" value="@Model?.Goalsscored" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Goalsconceded">Goals Conceded</label>
+                <input type="number" id="Goalsconceded" name="Goalsconceded" class="form-control" value="@Model?.Goalsconceded" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Wins">Wins</label>
+                <input type="number" id="Wins" name="Wins" class="form-control" value="@Model?.Wins" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Draws">Draws</label>
+                <input type="number" id="Draws" name="Draws" class="form-control" value="@Model?.Draws" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Losses">Losses</label>
+                <input type="number" id="Losses" name="Losses" class="form-control" value="@Model?.Losses" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Leagueposition">League Position</label>
+                <input type="number" id="Leagueposition" name="Leagueposition" class="form-control" value="@Model?.Leagueposition" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9fafb;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .form-container {
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 26px;
+        color: #444;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 14px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+
+        .form-control:focus {
+            border-color: #2196F3;
+            outline: none;
+        }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #2196F3;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #1976D2;
+        }
+
+    .form-group input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+        .form-group input[type="number"]::-webkit-outer-spin-button,
+        .form-group input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+</style>

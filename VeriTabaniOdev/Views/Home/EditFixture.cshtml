@@ -1,0 +1,154 @@
+﻿@model VeriTabaniOdev.Models.Fixture
+
+@{
+    ViewData["Title"] = "Edit Fixture";
+}
+
+<h2 class="text-center">Edit Fixture</h2>
+
+<div class="form-container">
+    <form asp-action="EditFixtureUpdate" method="post" asp-route-matchId="@Model.Matchid">
+        <!-- Gizli input ile Matchid'yi gönderiyoruz -->
+        <input type="hidden" id="Matchid" name="Matchid" value="@Model.Matchid" />
+
+        <div class="form-group">
+            <label for="MatchDate">Match Date</label>
+            <input type="date" id="MatchDate" name="Matchdate" class="form-control" value="@Model.Matchdate.ToString("yyyy-MM-dd")" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Homescore">Home Score</label>
+            <input type="number" id="Homescore" name="Homescore" class="form-control" value="@Model.Homescore" />
+        </div>
+
+        <div class="form-group">
+            <label for="Awayscore">Away Score</label>
+            <input type="number" id="Awayscore" name="Awayscore" class="form-control" value="@Model.Awayscore" />
+        </div>
+
+        <div class="form-group">
+            <label for="Hometeamid">Home Team ID</label>
+            <input type="number" id="Hometeamid" name="Hometeamid" class="form-control" value="@Model.Hometeamid" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Awayteamid">Away Team ID</label>
+            <input type="number" id="Awayteamid" name="Awayteamid" class="form-control" value="@Model.Awayteamid" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Leagueid">League ID</label>
+            <input type="number" id="Leagueid" name="Leagueid" class="form-control" value="@Model.Leagueid" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Fixture</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        async function fetchTeams() {
+            const leagueId = document.getElementById('Leagueid').value;
+            if (!leagueId) {
+                document.getElementById('teamList').innerHTML = '<p>Please enter a valid League ID.</p>';
+                return;
+            }
+
+            const response = await fetch(`/Home/TeamViewByLeague?Leagueid=${leagueId}`);
+            if (response.ok) {
+                const data = await response.text();
+                document.getElementById('teamList').innerHTML = data;
+            } else {
+                document.getElementById('teamList').innerHTML = '<p>No teams found.</p>';
+            }
+        }
+    </script>
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9fafb;
+        padding: 20px;
+    }
+
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #444;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+        .form-group label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 14px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+
+        .form-control:focus {
+            border-color: #2196F3;
+            outline: none;
+        }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #2196F3;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #1976D2;
+        }
+
+    .team-list {
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+        .team-list p {
+            font-size: 14px;
+            color: #444;
+        }
+
+    .form-group input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+        .form-group input[type="number"]::-webkit-outer-spin-button,
+        .form-group input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+</style>

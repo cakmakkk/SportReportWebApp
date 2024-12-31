@@ -1,0 +1,36 @@
+﻿@model Pointstable
+
+@{
+    ViewData["Title"] = "Update Fixture";
+}
+
+<form asp-action="CreateFixtureView" method="post">
+    <div>
+        <label for="Teamname">Team Name:</label>
+        <input type="text" id="Teamname" name="Teamname" value="@Model.Teamname" />
+    </div>
+    <div>
+        <label for="Leagueid">League ID:</label>
+        <input type="number" id="Leagueid" name="Leagueid" value="@Model.Leagueid" />
+    </div>
+   
+    <div>
+        <label for="Points">Points:</label>
+        <input type="number" id="Points" name="Points" value="@Model.Points" />
+    </div>
+    <div>
+        <label for="Goalsscored">Goals Scored:</label>
+        <input type="number" id="Goalsscored" name="Goalsscored" value="@Model.Goalsscored" />
+    </div>
+    <div>
+        <label for="Goalsconceded">Goals Conceded:</label>
+        <input type="number" id="Goalsconceded" name="Goalsconceded" value="@Model.Goalsconceded" />
+    </div>
+    <div>
+        <label for="Goaldifference">Goal Difference:</label>
+        <input type="number" id="Goaldifference" name="Goaldifference" value="@Model.Goaldifference" />
+    </div>
+  
+
+    <button type="submit">Güncelle</button>
+</form>

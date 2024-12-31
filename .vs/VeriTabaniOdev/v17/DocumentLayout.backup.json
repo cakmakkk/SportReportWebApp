@@ -1,0 +1,337 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cakma\\Desktop\\SportReportApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\uprivacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\uprivacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\updatefixtureview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\updatefixtureview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\playerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\playerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\fixtureview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\fixtureview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\uindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\uindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\editfixture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\editfixture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\uplayerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\uplayerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\ufixtureview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\ufixtureview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\views\\home\\teamview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\views\\home\\teamview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\models\\filedibidbsoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\models\\filedibidbsoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|c:\\users\\cakma\\desktop\\sportreportapp\\veritabaniodev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{89BACACD-3EAE-4170-81B7-EB3B56D83528}|VeriTabaniOdev\\VeriTabaniOdev.csproj|solutionrelative:veritabaniodev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T18:49:20.639Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateFixtureView.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UpdateFixtureView.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\UpdateFixtureView.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UpdateFixtureView.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\UpdateFixtureView.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAcwIsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T19:31:31.273Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Profile.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Profile.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\Profile.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAmwHwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T09:32:05.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UIndex.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\UIndex.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UIndex.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\UIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T09:19:57.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\SignUp.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\SignUp.cshtml",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAUwAwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:51:14.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UPrivacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UPrivacy.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\UPrivacy.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UPrivacy.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\UPrivacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:47:23.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:44:22.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UPlayerView.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UPlayerView.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\UPlayerView.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UPlayerView.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\UPlayerView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:32:49.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UFixtureView.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UFixtureView.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\UFixtureView.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\UFixtureView.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\UFixtureView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:32:05.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditFixture.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\EditFixture.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\EditFixture.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\EditFixture.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\EditFixture.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwIcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T20:44:07.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Models\\Team.cs",
+              "RelativeToolTip": "VeriTabaniOdev\\Models\\Team.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T19:05:02.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TeamView.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\TeamView.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\TeamView.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\TeamView.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\TeamView.cshtml",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAcwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T18:55:19.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T12:48:24.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Program.cs",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Program.cs",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Program.cs",
+              "RelativeToolTip": "VeriTabaniOdev\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:14:19.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\appsettings.json",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\appsettings.json",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\appsettings.json",
+              "RelativeToolTip": "VeriTabaniOdev\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T09:13:50.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "fixtureView.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\fixtureView.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\fixtureView.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\fixtureView.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\fixtureView.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T19:44:49.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileDibiDbSonContext.cs",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Models\\FileDibiDbSonContext.cs",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Models\\FileDibiDbSonContext.cs",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Models\\FileDibiDbSonContext.cs",
+              "RelativeToolTip": "VeriTabaniOdev\\Models\\FileDibiDbSonContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T18:09:42.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerView.cshtml",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\PlayerView.cshtml",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Views\\Home\\PlayerView.cshtml",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Views\\Home\\PlayerView.cshtml",
+              "RelativeToolTip": "VeriTabaniOdev\\Views\\Home\\PlayerView.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwH8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T10:06:15.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "VeriTabaniOdev\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\cakma\\Desktop\\SportReportApp\\VeriTabaniOdev\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "VeriTabaniOdev\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAA6wOYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T19:20:21.894Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

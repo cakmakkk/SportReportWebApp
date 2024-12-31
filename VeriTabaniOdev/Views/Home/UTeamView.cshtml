@@ -1,0 +1,37 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="UIndex">VeriTabaniOdev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UFixtureView">Fikstür</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UPrivacy">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<h1>Update Team: @Model?.Teamname"</h1>
+<form asp-action="UpdateTeam" method="post">
+    <input type="hidden" name="Teamid" value="@Model?.Teamid" />
+    <label>Team Name: <input type="text" name="Teamname" value="@Model?.Teamname" /></label>
+    <label>League ID: <input type="number" name="Leagueid" value="@Model?.Leagueid" /></label>
+    <label>City: <input type="text" name="City" value="@Model?.City" /></label>
+    <label>Points: <input type="number" name="Points" value="@Model?.Points" /></label>
+    <label>Goals Scored: <input type="number" name="Goalsscored" value="@Model?.Goalsscored" /></label>
+    <label>Goals Conceded: <input type="number" name="Goalsconceded" value="@Model?.Goalsconceded" /></label>
+    <label>Wins: <input type="number" name="Wins" value="@Model?.Wins" /></label>
+    <label>Draws: <input type="number" name="Draws" value="@Model?.Draws" /></label>
+    <label>Losses: <input type="number" name="Losses" value="@Model?.Losses" /></label>
+    <label>League Position: <input type="number" name="Leagueposition" value="@Model?.Leagueposition" /></label>
+    <button type="submit">Update</button>
+</form>

@@ -1,0 +1,137 @@
+﻿@model List<VeriTabaniOdev.Models.Pointstable>
+@{
+    ViewData["Title"] = "Points Table";
+    var leagues = ViewBag.Leagues as List<string>;
+    var selectedLeague = ViewBag.SelectedLeague as string;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Table</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">VeriTabaniOdev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UFixtureView">Fikstür</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UPrivacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main class="container">
+        <!-- Header Section -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="text-primary display-5">🏆 Points Table</h1>
+            <div class="d-flex gap-3">
+                <div>
+                    <label for="sportSelector" class="form-label">Spor Türü:</label>
+                    <select id="sportSelector" class="form-select">
+                        <option value="1">Futbol</option>
+                        <option value="2">Basketbol</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="leagueSelector" class="form-label">Lig:</label>
+                    <select id="leagueSelector" class="form-select" onchange="updateTable(this.value)">
+                        @foreach (var league in leagues)
+                        {
+                            <option value="@league" selected="@(league == selectedLeague)">@league</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Points Table -->
+        <div class="table-responsive">
+            <table class="table table-hover align-middle shadow-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Takım</th>
+                        <th>Puan</th>
+                        <th>Oynanan Maçlar</th>
+                        <th>Galibiyet</th>
+                        <th>Beraberlik</th>
+                        <th>Mağlubiyet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("UPlayerView", "Home", new { teamName = item.Teamname })" class="text-decoration-none text-primary fw-bold">
+                                    @item.Teamname
+                                </a>
+                            </td>
+                            <td>@item.Points</td>
+                            <td>@item.Matchesplayed</td>
+                            <td>@item.Matcheswon</td>
+                            <td>@item.Matchesdrawn</td>
+                            <td>@item.Matcheslost</td>
+                            <td>                              
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-4 bg-white border-top">
+        <p class="mb-0">© 2024 VeriTabaniOdev. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Fetch leagues dynamically based on the selected sport
+        $(document).ready(function () {
+            $('#sportSelector').change(function () {
+                var sportID = $(this).val();
+                $.ajax({
+                    url: '/Home/GetLeaguesBySport',
+                    type: 'POST',
+                    data: { sportID: sportID },
+                    success: function (data) {
+                        $('#leagueSelector').empty();
+                        $('#leagueSelector').append('<option value="">Select a League</option>'); // Default option
+                        $.each(data, function (index, league) {
+                            $('#leagueSelector').append('<option value="' + league.leagueName + '">' + league.leagueName + '</option>');
+                        });
+                    },
+                    error: function () {
+                        alert('Ligler getirilemedi.');
+                    }
+                });
+            });
+        });
+
+        // Function to update the table when a new league is selected
+        function updateTable(league) {
+            window.location.href = '@Url.Action("UIndex", "Home")?league=' + encodeURIComponent(league);
+        }
+    </script>
+</body>
+</html>
